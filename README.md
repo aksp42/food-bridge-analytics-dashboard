@@ -171,7 +171,7 @@ git clone https://github.com/aksp42/food-bridge-analytics-dashboard
 2. Create a database:
 
 ```sql
-food_bridge
+food_wastage_db
 ```
 
 3. Import the provided `.sql` file.
@@ -214,7 +214,7 @@ www (WAMP)
 Then open in browser:
 
 ```
-http://localhost/food-bridge
+http://localhost/food-wastage-system/
 ```
 
 ---
