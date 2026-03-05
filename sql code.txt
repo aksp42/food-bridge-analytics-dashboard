@@ -1,0 +1,63 @@
+1. users Table
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    email VARCHAR(100) UNIQUE,
+    mobile VARCHAR(15),
+    password VARCHAR(255),
+    role ENUM('vendor','ngo','admin'),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+2. food_posts
+
+CREATE TABLE food_posts (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    vendor_id INT,
+    food_name VARCHAR(100),
+    quantity VARCHAR(50),
+    category ENUM('Veg','Non-Veg'),
+    pickup_location VARCHAR(255),
+    upload_time DATETIME,
+    status ENUM('Fresh','Priority','Expired') DEFAULT 'Fresh',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+3. food_requests
+
+CREATE TABLE food_requests (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    food_id INT,
+    ngo_id INT,
+    status ENUM('Pending','Approved','Rejected') DEFAULT 'Pending',
+    request_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+4. feedback
+
+CREATE TABLE feedback (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT,
+    rating INT,
+    comment TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+5. alerts
+
+CREATE TABLE alerts (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    food_id INT,
+    alert_type ENUM('Priority','Expired'),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+6. statistics
+
+CREATE TABLE statistics (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    vendors_count INT,
+    ngos_count INT,
+    total_food INT
+);
