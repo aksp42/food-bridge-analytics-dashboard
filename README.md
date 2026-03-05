@@ -123,25 +123,34 @@ Features include:
 ## 📂 Project Structure
 
 ```
-food-bridge
+food-wastage-system/
 │
-├── admin
-│   Admin dashboard and analytics
+├── index.php
+├── login.php
+├── register.php
+├── about.php
+├── feedback.php
+│── logout.php
+├── vendor/
+│   ├── dashboard.php
 │
-├── vendor
-│   Vendor portal for food listing and donation tracking
+├── ngo/
+│   ├── dashboard.php
 │
-├── ngo
-│   NGO dashboard for searching and requesting food
+├── admin/
+│   ├── dashboard.php
 │
-├── includes
-│   Database connection and reusable components
+├── includes/
+│   ├── db.php
+│   ├── navbar.php
+│   ├── footer.php
 │
-├── assets
-│   CSS, JavaScript, images
-│
-└── database
-    food_bridge.sql
+├── assets/
+│   ├── css/
+│   │   └── style.css
+│   ├── js/
+│   │   └── script.js
+│   └── images/
 ```
 
 ---
