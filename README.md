@@ -248,6 +248,7 @@ Contributions and suggestions are welcome.
 ## 🧑‍💻 Author
 
 * **Akanksha Singh** - https://www.linkedin.com/in/akanksha-singh-4715a0351/
+  
 Video of the project : https://www.linkedin.com/feed/update/urn:li:activity:7435308264692711426/?originTrackingId=AvOMtZdGQbLQAvcHoStBjQ%3D%3D
 
 
@@ -256,4 +257,4 @@ Video of the project : https://www.linkedin.com/feed/update/urn:li:activity:7435
 
 ## 📜 License
 
-This project is created for **educational and social impact purposes**.
+This project is licensed under the MIT License - see the LICENSE file for details.
